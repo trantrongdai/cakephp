@@ -13,7 +13,7 @@ class HosocanbosController extends AppController {
         } else {
             $hosocanbos = $this->Hosocanbo->find('all', array(
                 'conditions' => array('Hosocanbo.hoten LIKE' => '%' . $data['Hosocanbo']['Tên'] . '%',
-                    'Hosocanbo.gioitinh = '=> $data['Hosocanbo']['Giới tính'] == 'Nam')));
+                    'Hosocanbo.gioitinh = '=> $data['Hosocanbo']['Giới tính'] == 'Nam', )));
         }
         $this->set('hosocanbos', $hosocanbos);
 

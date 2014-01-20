@@ -4,3 +4,4 @@
  */
 class Chucdanh extends AppModel {
 }
+?>
