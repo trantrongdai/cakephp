@@ -1,10 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 class HosocanbosController extends AppController {
 
@@ -17,7 +12,8 @@ class HosocanbosController extends AppController {
             
         } else {
             $hosocanbos = $this->Hosocanbo->find('all', array(
-                'conditions' => array('Hosocanbo.hoten LIKE' => '%' . $data['Hosocanbo']['Tên'] . '%')));
+                'conditions' => array('Hosocanbo.hoten LIKE' => '%' . $data['Hosocanbo']['Tên'] . '%',
+                    'Hosocanbo.gioitinh = '=> $data['Hosocanbo']['Giới tính'] == 'Nam')));
         }
         $this->set('hosocanbos', $hosocanbos);
 
