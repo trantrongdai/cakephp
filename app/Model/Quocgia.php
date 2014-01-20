@@ -8,4 +8,11 @@
 
 class Quocgia extends AppModel{
     //public $hasOne = 'Hosocanbo';
+    public $hasMany=array(
+    	 'Hosocanbo' => array(
+     'className'     => 'Hosocanbo',
+     'foreignKey'    => 'quocgia_id',
+     'conditions'    => null,
+     ),
+    	);
 }

@@ -8,4 +8,11 @@
 
 class User extends AppModel{
     public $hasOne = 'Hosocanbo';
+    public $hasMany=array(
+    	 'Nhatkyhethong' => array(
+     'className'     => 'Nhatkyhethong',
+     'foreignKey'    => 'user_id',
+     'conditions'    => null,
+     ),
+    	);
 }
