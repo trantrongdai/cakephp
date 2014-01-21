@@ -48,7 +48,7 @@ foreach ($hosocanbos as $hosocanbo) : {
     }
     ?>
         <tr>
-            <td><?php echo $this->Html->link($hosocanbo['Hosocanbo']['hoten'], array($hosocanbo['Hosocanbo']['id'], 'action' => 'detail',)); ?></td>
+            <td><?php echo $this->Html->link($hosocanbo['Hosocanbo']['hoten'], array($hosocanbo['HosocanbAAo']['id'], 'action' => 'detail',)); ?></td>
             <td><?php echo $hosocanbo['Hosocanbo']['thudientu']; ?></td>   
         </tr>
 
