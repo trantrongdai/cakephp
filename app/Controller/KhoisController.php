@@ -8,7 +8,8 @@ class KhoisController extends AppController {
         $this->set('khois', $khois);
     }
 
-    public function view($id = null) {
+    public function detail($id = null) {
+    	$this->Khoi->recursive = 2;
         $khoi = $this->Khois->findById($id);
         $this->set('khoi', $khoi);
     }

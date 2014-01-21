@@ -26,6 +26,6 @@
         <li>
             <?php echo $this->Html->link("TÌM KIẾM CÁN BÔ", array('controller' => 'hosocanbos', 'action' => 'index')) ?>
         <li>
-            <?php echo $this->Html->link("CÔNG BỐ KHOA HỌC", array('controller' => 'congbos', 'action' => 'index')) ?>
+            <?php echo $this->Html->link("CÔNG BỐ KHOA HỌC", array('controller' => 'congtrinhs', 'action' => 'index')) ?>
     </ul>
 </nav>
